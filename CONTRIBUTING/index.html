@@ -50,7 +50,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#在cmdbash提交本地修改的步骤">在cmd/bash提交本地修改的步骤</a>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#在vscode提交本地修改的步骤">在VScode提交本地修改的步骤</a>
+<li class="toctree-l2"><a class="reference internal" href="#在-vs-code-中提交本地修改的步骤">在 VS Code 中提交本地修改的步骤</a>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#其他">其他</a>
 </li>
@@ -72,7 +72,7 @@
 </li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="" href="https://openhutb.github.io/git/?locale=zh_CN">git 教程</a>
+<li class="toctree-l1"><a class="" href="https://openhutb.github.io/git/?locale=zh_CN">Git 教程</a>
 </li>
 </ul>
 <ul>
@@ -101,6 +101,8 @@
 </ul>
 <p class="caption"><span class="caption-text">贡献相关</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../community/code-of-conduct/">社区行为准则</a>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../codespace/">基于浏览器的贡献指南</a>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../dev/sign_up/">注册 Github 账号</a>
@@ -121,6 +123,10 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../submit/">文档修改指南</a>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../video_editing/">视频制作流程</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../adv/find_author/">查找文档作者与源码</a>
+</li>
 </ul>
 <p class="caption"><span class="caption-text">工具与资源</span></p>
 <ul>
@@ -129,6 +135,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../blender/">三维建模软件 Blender 介绍</a>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../markdown2anything/">Markdown 一键发布到社交平台</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Minecraft%20Java%20Edition%20Downgrade%20Guide/">Java 版 Minecraft 回退旧版本指南</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../src/python/">Python 论文绘图脚本</a>
 </li>
 </ul>
 <p class="caption"><span class="caption-text">学习与论文</span></p>
@@ -167,6 +177,7 @@
 <div class="section" itemprop="articleBody">
 <div><h1 id="贡献指南">贡献指南</h1>
 <p>开源的核心就是与他人沟通，也就是解决冲突的过程。该指南的初衷就是为初学者提供一个简单的方法去学习以及参与开源项目。</p>
+<p>参与社区前请阅读 <a href="https://github.com/OpenHUTB/.github/blob/master/CODE_OF_CONDUCT.md">OpenHUTB 行为准则</a>。遇到骚扰、歧视或其他不可接受行为时，请通过行为准则中的渠道联系维护者。</p>
 <h2 id="如何贡献">如何贡献</h2>
 <p>我们欢迎各种形式的贡献！请根据你的目标选择对应的方式：</p>
 <ul>
@@ -250,12 +261,12 @@ git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span
 <p><img src="https://firstcontributions.github.io/assets/Readme/compare-and-pull.png" width="410"/></p>
 <p><img src="https://firstcontributions.github.io/assets/Readme/submit-pull-request.png" width="410"/></p>
 <p>不久之后，团队成员便会把你所有的改动合并到该项目的主分支。更改合并后，你会收到一封电子邮件通知。</p>
-<h2 id="在vscode提交本地修改的步骤">在VScode提交本地修改的步骤</h2>
+<h2 id="在-vs-code-中提交本地修改的步骤">在 VS Code 中提交本地修改的步骤</h2>
 <p><strong>1.工具准备</strong></p>
 <ul>
 <li>首先按上述步骤创建GitHub账号，这里不再赘述；</li>
-<li>点击VScode左下角小猫图标登录GitHub账号；</li>
-<li>在VScode扩展商店安装“GitHub Pull Requests”扩展，它把<strong>git add、git commit、git push</strong>和<strong>git branch</strong>这些命令都变成了点击操作，对新手很友好，强烈建议把Chinese Language Pack for Visual Studio Code这个汉化扩展也装上，安装成功之后重启。</li>
+<li>点击 VS Code 左下角小猫图标登录GitHub账号；</li>
+<li>在 VS Code 扩展商店安装“GitHub Pull Requests”扩展，它把<strong>git add、git commit、git push</strong>和<strong>git branch</strong>这些命令都变成了点击操作，对新手很友好，强烈建议把Chinese Language Pack for Visual Studio Code这个汉化扩展也装上，安装成功之后重启。</li>
 </ul>
 <p><strong>2.克隆个人仓库</strong></p>
 <ul>
@@ -264,15 +275,15 @@ git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span
 <p><strong>3.新建并更改分支</strong></p>
 <ul>
 <li>这一步相当于新建一个副本，在这个副本上面你可以做任何事，且不会损坏、污染主分支。</li>
-<li>在VScode左下角，也就是图一所示位置，会看到<strong>master</strong>或者<strong>main</strong>的字样，这意味着你现在在主分支，点击他，上方对话框会出现<strong>创建新分支...</strong>，点击他就可以创建新分支，成功后如图二所示，创建了一个名为<strong>new</strong>的分支，并且自动跳转到了这个分支，这时候就可以按需修改了。</li>
+<li>在 VS Code 左下角，也就是图一所示位置，会看到<strong>master</strong>或者<strong>main</strong>的字样，这意味着你现在在主分支，点击它，上方对话框会出现<strong>创建新分支...</strong>，点击它就可以创建新分支，成功后如图二所示，创建了一个名为<strong>new</strong>的分支，并且自动跳转到了这个分支，这时候就可以按需修改了。</li>
 </ul>
 <p><img alt="图一" src="https://raw.githubusercontent.com/OpenHUTB/.github/master/docs/img/branch_setting.png"/>
 <img alt="图二" src="https://raw.githubusercontent.com/OpenHUTB/.github/master/docs/img/branch_new.png"/></p>
 <p><strong>4.暂存修改并提交</strong></p>
 <ul>
 <li>暂存，也就是 <strong>git add</strong> 操作，用来选择这次要提交的修改；<strong>git commit</strong> 会把已经暂存的修改保存为一次提交。只保存文件还不等于完成提交。</li>
-<li>如图三所示，点击左边第三个<strong>源代码管理</strong>图标，在存储库这一栏可以看到新建的分支和主分支，如果下方的更改一栏是空的，说明你现在所处的分支不对，点击对应分支即可切换。随后点击加号即可暂存成功。
-确保保存并暂存所有修改后，在<strong>提交</strong>按钮上方的对话框输入本次的说明，就可以提交了。</li>
+<li>如图三所示，点击左边第三个<strong>源代码管理</strong>图标，在存储库这一栏可以看到新建的分支和主分支，如果下方的更改一栏是空的，说明你现在所处的分支不对，点击对应分支即可切换。随后点击加号即可暂存成功。</li>
+<li>确保保存并暂存所有修改后，在<strong>提交</strong>按钮上方的对话框输入本次的说明，就可以提交了。</li>
 </ul>
 <p><img alt="图三" src="https://raw.githubusercontent.com/OpenHUTB/.github/master/docs/img/repository.png"/></p>
 <p><strong>5.本地预览</strong></p>
@@ -280,6 +291,11 @@ git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span
 <li>如下图所示，点击第二行第二个放大镜图标就可以直接预览渲染后的网页效果。</li>
 </ul>
 <p><img alt="图四" src="https://raw.githubusercontent.com/OpenHUTB/.github/master/docs/img/Preview.png"/></p>
+<ul>
+<li>需要看<strong>完整的站点效果</strong>（导航、插件、公式、页面跳转）时，在仓库根目录运行 <code>python serve.py</code>：
+  Windows / macOS / Linux 通用，首次会自动创建 <code>.venv</code> 并安装依赖，构建通过后打开浏览器预览。
+  只想检查环境可加 <code>--check</code>，只想看会执行哪些命令可加 <code>--dry-run</code>。</li>
+</ul>
 <p><strong>6.发布Branch</strong></p>
 <ul>
 <li>
@@ -367,7 +383,8 @@ git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </
 </table>
 <h2 id="问题">问题</h2>
 <h6 id="国内访问-github-可能较慢">国内访问 github 可能较慢</h6>
-<p>这里提供 github 加速方案和科学上网的 <a href="https://openhutb.github.io/doc/build_carla/#internet">链接</a> 。</p>
+<p>这里提供 github 加速方案和科学上网的 <a href="https://openhutb.github.io/doc/build_carla/#internet">链接</a> 。
+⚠️ 提示：请遵守国内网络相关法规。</p>
 <h6 id="向-github-推送时出现-403-或权限不足">向 GitHub 推送时出现 403 或权限不足</h6>
 <p>先区分“提交署名”和“登录权限”：<code>git config user.name</code>、<code>user.email</code> 只决定提交记录的署名，不会赋予仓库写入权限。在网址前添加用户名也不会改变仓库权限。</p>
 <ol>
@@ -394,21 +411,25 @@ git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span
 <div class="highlight"><pre><span></span><code><span class="c1"># 增加缓存至4G</span>
 git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>http.postBuffer<span class="w"> </span><span class="m">4048576000</span>
 </code></pre></div>
-<!-- 参考 [第一次参与开源项目](https://github.com/firstcontributions/first-contributions/blob/main/docs/translations/README.zh-cn.md) --></div>
+<!-- 参考 [第一次参与开源项目](https://github.com/firstcontributions/first-contributions/blob/main/docs/translations/README.zh-cn.md) -->
+<hr/>
+<blockquote>
+<p>本页最近一次修改：2026-11-16 · DavidLYP · 提交 <a href="https://github.com/OpenHUTB/.github/commit/50c0fd6"><code>50c0fd6</code></a></p>
+</blockquote></div>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
 <a class="btn btn-neutral float-left" href="../simulator/" title="模拟器简介"><span class="icon icon-circle-arrow-left"></span> Previous</a>
 <a class="btn btn-neutral float-right" href="../paper_tips/" title="论文写作技巧">Next <span class="icon icon-circle-arrow-right"></span></a>
 </div>
-<hr/>
+<hr>
 <div role="contentinfo">
 <!-- Copyright etc -->
 <p>OpenHUTB 版权所有 © 2026</p>
 </div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
+</hr></footer>
 </div>
 </div>
 </section>

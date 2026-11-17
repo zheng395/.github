@@ -48,7 +48,7 @@
 </li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="" href="https://openhutb.github.io/git/?locale=zh_CN">git 教程</a>
+<li class="toctree-l1"><a class="" href="https://openhutb.github.io/git/?locale=zh_CN">Git 教程</a>
 </li>
 </ul>
 <ul>
@@ -77,6 +77,8 @@
 </ul>
 <p class="caption"><span class="caption-text">贡献相关</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../community/code-of-conduct/">社区行为准则</a>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../codespace/">基于浏览器的贡献指南</a>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../dev/sign_up/">注册 Github 账号</a>
@@ -111,6 +113,10 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../submit/">文档修改指南</a>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../video_editing/">视频制作流程</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../adv/find_author/">查找文档作者与源码</a>
+</li>
 </ul>
 <p class="caption"><span class="caption-text">工具与资源</span></p>
 <ul>
@@ -119,6 +125,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../blender/">三维建模软件 Blender 介绍</a>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../markdown2anything/">Markdown 一键发布到社交平台</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Minecraft%20Java%20Edition%20Downgrade%20Guide/">Java 版 Minecraft 回退旧版本指南</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../src/python/">Python 论文绘图脚本</a>
 </li>
 </ul>
 <p class="caption"><span class="caption-text">学习与论文</span></p>
@@ -168,7 +178,7 @@
 其中 <code>Ubuntu-20.04</code> 里的 <code>20.04</code> 是发行版版本号，可按需替换；该命令需要下载并安装完整系统，耗时较长。
 <p>说明：Ubuntu 20.04 LTS 的标准安全维护已于 2025 年 5 月结束。新安装建议使用仍在标准支持期内的 LTS（例如 22.04 或 24.04）；如果课程或软件明确要求 20.04，可以继续使用，但标准软件源不再提供常规安全更新，需要时可通过 Ubuntu Pro 获取扩展维护。版本支持周期见 <a href="https://ubuntu.com/about/release-cycle">https://ubuntu.com/about/release-cycle</a>。</p>
 <p>设置 Linux 用户名和密码。</p>
-<p>注意：密码输入时不显示任何字符，盲打回车即可。</p>
+<p>注意：密码输入时终端不显示任何字符，输入完成后直接按回车即可。</p>
 <p>安装后更新软件源</p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>upgrade
 </code></pre></div>
@@ -209,21 +219,25 @@
 <p>在列表中确认目标发行版名称，并查看 <code>VERSION</code> 列。若项目需要 WSL 2，而发行版显示为 1，可先备份重要文件，再按需转换：</p>
 <div class="highlight"><pre><span></span><code><span class="n">wsl</span> <span class="p">-</span><span class="n">-set-version</span> <span class="n">Ubuntu</span><span class="p">-</span><span class="n">20</span><span class="p">.</span><span class="n">04</span> <span class="n">2</span>
 </code></pre></div>
-<p><code>wsl --update</code> 更新 WSL 组件；进入 Ubuntu 后运行 <code>sudo apt update &amp;&amp; sudo apt upgrade</code> 更新 Linux 软件包。这两项更新针对不同部分。更多命令见<a href="https://learn.microsoft.com/zh-cn/windows/wsl/basic-commands">微软 WSL 基本命令</a>。</p></div>
+<p><code>wsl --update</code> 更新 WSL 组件；进入 Ubuntu 后运行 <code>sudo apt update &amp;&amp; sudo apt upgrade</code> 更新 Linux 软件包。这两项更新针对不同部分。更多命令见<a href="https://learn.microsoft.com/zh-cn/windows/wsl/basic-commands">微软 WSL 基本命令</a>。</p>
+<hr/>
+<blockquote>
+<p>本页最近一次修改：2026-11-13 · Mayu-ting · 提交 <a href="https://github.com/OpenHUTB/.github/commit/c1acb2f"><code>c1acb2f</code></a></p>
+</blockquote></div>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
 <a class="btn btn-neutral float-left" href="../note/" title="注意事项"><span class="icon icon-circle-arrow-left"></span> Previous</a>
 <a class="btn btn-neutral float-right" href="../submit/" title="文档修改指南">Next <span class="icon icon-circle-arrow-right"></span></a>
 </div>
-<hr/>
+<hr>
 <div role="contentinfo">
 <!-- Copyright etc -->
 <p>OpenHUTB 版权所有 © 2026</p>
 </div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
+</hr></footer>
 </div>
 </div>
 </section>

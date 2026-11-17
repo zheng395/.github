@@ -48,7 +48,7 @@
 </li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="" href="https://openhutb.github.io/git/?locale=zh_CN">git 教程</a>
+<li class="toctree-l1"><a class="" href="https://openhutb.github.io/git/?locale=zh_CN">Git 教程</a>
 </li>
 </ul>
 <ul>
@@ -77,6 +77,8 @@
 </ul>
 <p class="caption"><span class="caption-text">贡献相关</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../community/code-of-conduct/">社区行为准则</a>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../codespace/">基于浏览器的贡献指南</a>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../sign_up/">注册 Github 账号</a>
@@ -111,6 +113,10 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../submit/">文档修改指南</a>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../video_editing/">视频制作流程</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../adv/find_author/">查找文档作者与源码</a>
+</li>
 </ul>
 <p class="caption"><span class="caption-text">工具与资源</span></p>
 <ul>
@@ -119,6 +125,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../../blender/">三维建模软件 Blender 介绍</a>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../markdown2anything/">Markdown 一键发布到社交平台</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Minecraft%20Java%20Edition%20Downgrade%20Guide/">Java 版 Minecraft 回退旧版本指南</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../src/python/">Python 论文绘图脚本</a>
 </li>
 </ul>
 <p class="caption"><span class="caption-text">学习与论文</span></p>
@@ -169,7 +179,7 @@
 df<span class="w"> </span>-h<span class="w"> </span>/
 </code></pre></div>
 <p>先找挂载点为 <code>/</code> 的分区，再结合容量和文件系统类型，在 GParted 中确认同一块磁盘、同一个分区。如果实际布局与截图不同，或使用了 LVM、加密卷，应先查对应的扩容方法，不要直接套用后面的分区顺序。</p>
-<p>启动虚拟机中 ubuntu 系统，使用命令<code>df -h</code>查看目前文件系统挂载情况：</p>
+<p>启动虚拟机中 Ubuntu 系统，使用命令<code>df -h</code>查看目前文件系统挂载情况：</p>
 <p><img alt="" src="../../img/dev/disk_free.png"/></p>
 <p>命令输出结果可知，根目录总共有 69G，目前已经使用了 59G，还剩下 6.4G。</p>
 <h3 id="根分区正在使用时">根分区正在使用时</h3>
@@ -203,21 +213,25 @@ df<span class="w"> </span>-h<span class="w"> </span>/
 <li><a href="https://blog.csdn.net/qq_34160841/article/details/113058756">vmware：ubuntu虚拟机如何扩容？</a></li>
 <li><a href="https://gparted.org/display-doc.php?name=help-manual">GParted 官方操作手册</a></li>
 <li><a href="https://man7.org/linux/man-pages/man8/lsblk.8.html">lsblk 命令说明</a></li>
-</ul></div>
+</ul>
+<hr/>
+<blockquote>
+<p>本页最近一次修改：2026-11-12 · VirtuosaHutb · 提交 <a href="https://github.com/OpenHUTB/.github/commit/f9cc5b6"><code>f9cc5b6</code></a></p>
+</blockquote></div>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
 <a class="btn btn-neutral float-left" href="../merge_commit/" title="合并提交"><span class="icon icon-circle-arrow-left"></span> Previous</a>
 <a class="btn btn-neutral float-right" href="../../note/" title="注意事项">Next <span class="icon icon-circle-arrow-right"></span></a>
 </div>
-<hr/>
+<hr>
 <div role="contentinfo">
 <!-- Copyright etc -->
 <p>OpenHUTB 版权所有 © 2026</p>
 </div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
+</hr></footer>
 </div>
 </div>
 </section>
