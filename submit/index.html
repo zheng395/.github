@@ -138,6 +138,8 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../src/python/">Python 论文绘图脚本</a>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../filee_official_guide/">Filee 文件格式转换工具</a>
+</li>
 </ul>
 <p class="caption"><span class="caption-text">学习与论文</span></p>
 <ul>
@@ -184,20 +186,20 @@
 (打开网站首页第一个是Visual Studio 2026,第二个才是所需的Visual Studio Code)
 <a href="https://visualstudio.microsoft.com/zh-hans/downloads/">https://visualstudio.microsoft.com/zh-hans/downloads/</a></p>
 <h2 id="3-克隆仓库">3. 克隆仓库</h2>
-<p>在克隆代码前，需要先将社区的官方仓库“复制”一份到你自己的 GitHub 账号下，这个过程称为 Fork。</p>
+<p>在克隆代码前，需要先将社区的官方仓库“复制”一份到你自己的 GitHub 账号下，这个过程称为 Fork的过程。</p>
 <ol>
 <li>登录你的 GitHub 账号。</li>
 <li>打开社区原仓库地址：<a href="https://github.com/OpenHUTB/.github">https://github.com/OpenHUTB/.github</a></li>
 <li>点击页面右上角的 <strong>Fork</strong> 按钮。</li>
-<li>在跳转的页面中点击 <strong>Create fork</strong>。等待几秒钟，你的账号下就会生成一个同名的仓库。<blockquote>
-<p><strong>注意</strong>：该命令中的 <code>{用户名}</code> 请替换为自己的GitHub用户名。</p>
+<li>在跳转的页面中点击 <strong>Create fork</strong>。等待几秒钟，你的账号下就会生成一个你的账户名的仓库。<blockquote>
+<p><strong>注意</strong>：该命令中的 <code>用户名</code> 请替换为自己的GitHub用户名。</p>
 </blockquote>
 </li>
 </ol>
 <p>克隆你 Fork 后的个人仓库：</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/<span class="o">{</span>你的GitHub用户名<span class="o">}</span>/.github.git
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/你的GitHub用户名/.github.git
 </code></pre></div>
-<p>克隆完成后进入仓库目录：</p>
+<p>克隆完成后进入仓库主目录：</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>.github
 </code></pre></div>
 <h2 id="4-介绍-github-文件结构">4. 介绍 .github 文件结构</h2>
@@ -228,7 +230,7 @@
 </ol>
 <h2 id="6-如何修改">6. 如何修改</h2>
 <ol>
-<li>在文档网站找到你要修改的地方。(你现在在看的就是文档网站)</li>
+<li>在文档网站找到你要修改的地方。</li>
 <li>在克隆仓库的根目录中打开 <code>mkdocs.yml</code>，根据文档网站上的页面名称查找对应的 <code>.md</code> 文件。</li>
 <li>打开对应的 <code>.md</code> 文件，在 Visual Studio Code 中修改。</li>
 <li>保存修改（<code>Ctrl+S</code>）。</li>
@@ -254,7 +256,6 @@
 <p>下载 MkDocs（在命令行中运行以下命令下载）：
    </p><div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>mkdocs<span class="w"> </span>mkdocs-material<span class="w"> </span>mkdocs-mermaid2-plugin
 </code></pre></div>
-<em>（如果出现报错，可以将错误信息发给 AI 解决）</em>
 </li>
 <li>
 <p>在终端 <code>cd</code> 到你的 <code>.github</code> 文件夹路径下（例如：<code>cd 你的路径/.github</code>），然后运行预览指令：
@@ -266,12 +267,12 @@
 </li>
 </ol>
 <h3 id="填写网页链接">填写网页链接</h3>
-<p>整理报告中的页面地址时，先在 PR 的 Files changed（文件变更）中确认源文件路径，再对照仓库根目录的 mkdocs.yml 导航查找对应页面。本地预览用于检查页面效果；填写报告时，打开已部署页面并确认内容，再复制他人能访问的网页地址，不要填写本地预览地址，也不要只按文件名拼网址。尚未部署的修改，或 README、脚本和配置文件等没有对应文档页的内容，填写具体的 GitHub 文件链接。</p>
+<p>整理报告中的页面地址时，先在 PR 的 Files changed（文件变更）中确认源文件路径，再对照仓库根目录的 mkdocs.yml 导航查找对应页面。本地预览用于检查页面效果；填写报告时，打开已部署页面并确认内容，再复制他人能访问的网页地址，不要填写本地预览地址，也不要只按文件名拼写网址。尚未部署的修改，或 README、脚本和配置文件等没有对应文档页的内容，填写具体的 GitHub 文件链接。</p>
 <h2 id="8-提交">8. 提交</h2>
-<p><a href="../CONTRIBUTING/">提交流程</a></p>
+<p>按仓库根目录的<a href="https://github.com/OpenHUTB/.github/blob/master/CONTRIBUTING.md">贡献指南</a>提交修改。指南分别说明了命令行和 VS Code 的提交步骤。</p>
 <hr/>
 <blockquote>
-<p>本页最近一次修改：2026-11-13 · wangxin926402 · 提交 <a href="https://github.com/OpenHUTB/.github/commit/4d2ea60"><code>4d2ea60</code></a></p>
+<p>本页最近一次修改：2026-11-17 · zh-yutong · 提交 <a href="https://github.com/OpenHUTB/.github/commit/2a0f400"><code>2a0f400</code></a></p>
 </blockquote></div>
 </div>
 </div><footer>
